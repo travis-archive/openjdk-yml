@@ -1,0 +1,13 @@
+os: linux
+language: java
+jdk: openjdk13
+script: java -version
+
+install: true
+
+jobs:
+  include:
+    - dist: xenial
+    - dist: bionic
+    - dist: focal
+    - dist: jammy
